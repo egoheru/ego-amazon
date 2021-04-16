@@ -8,5 +8,5 @@ Fully Ecommerce Stripe
 *Account and login page 
 *Prduct page
 *Cart and Checkout Page
-*Real paymenrs
+*Real payments
 *Order History
