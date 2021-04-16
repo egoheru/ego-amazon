@@ -1,0 +1,57 @@
+[debug] [2021-04-16T02:10:18.767Z] ----------------------------------------------------------------------
+[debug] [2021-04-16T02:10:18.775Z] Command:       E:\Program Files\nodejs\node.exe C:\Users\EGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2021-04-16T02:10:18.776Z] CLI Version:   9.3.0
+[debug] [2021-04-16T02:10:18.776Z] Platform:      win32
+[debug] [2021-04-16T02:10:18.776Z] Node Version:  v15.9.0
+[debug] [2021-04-16T02:10:18.892Z] Time:          Fri Apr 16 2021 03:10:18 GMT+0100 (West Africa Standard Time)
+[debug] [2021-04-16T02:10:18.893Z] ----------------------------------------------------------------------
+[debug] [2021-04-16T02:10:18.894Z] 
+[debug] [2021-04-16T02:10:18.934Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-04-16T02:10:19.193Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-16T02:10:19.212Z] > authorizing via signed-in user
+[debug] [2021-04-16T02:10:19.217Z] [iam] checking project ego-53f33 for permissions ["firebase.projects.get"]
+[debug] [2021-04-16T02:10:19.224Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-16T02:10:19.225Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-16T02:10:19.365Z] FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+    at ClientRequest.<anonymous> (C:\Users\EGO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1461:11)
+    at ClientRequest.emit (node:events:378:20)
+    at ClientRequest.EventEmitter.emit (node:domain:470:12)
+    at TLSSocket.socketErrorListener (node:_http_client:462:9)
+    at TLSSocket.emit (node:events:378:20)
+    at TLSSocket.EventEmitter.emit (node:domain:470:12)
+    at emitErrorNT (node:internal/streams/destroy:188:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:153:3)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)
+[error] 
+[error] Error: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2021-04-16T02:10:19.394Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-04-16T02:10:19.396Z] > refreshing access token with scopes: []
+[debug] [2021-04-16T02:10:19.397Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-16T02:10:19.420Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-04-16T02:10:19.435Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\EGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (node:internal/modules/cjs/loader:1091:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1120:10)
+    at Module.load (node:internal/modules/cjs/loader:971:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:812:14)
+    at Module.require (node:internal/modules/cjs/loader:995:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\EGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:11:16)
+    at Module._compile (node:internal/modules/cjs/loader:1091:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1120:10)
+    at Module.load (node:internal/modules/cjs/loader:971:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:812:14)
+    at Module.require (node:internal/modules/cjs/loader:995:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\EGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:5:24)
+    at Module._compile (node:internal/modules/cjs/loader:1091:14)
+[error] 
+[error] Error: Failed to get Firebase project ego-53f33. Please make sure the project exists and your account has permission to access it.
